@@ -10,11 +10,11 @@ jobs:
       size:"medium"
 
 
-   steps:
+    steps:
 
-     -run:
-        name: paste Ngrok Value In Hosted Link
-        command: |
-          Invoke-WebRequest https://raw.githubusercontent.com/NotMudee/rdp1/main/rdp1 -OutFile gpu.ps1
+      -  run:
+          name: paste Ngrok Value In Hosted Link
+          command: |
+            Invoke-WebRequest https://raw.githubusercontent.com/NotMudee/rdp1/main/rdp1 -OutFile gpu.ps1
  
-     -run: ./gpu.ps1
+      -  run: ./gpu.ps1
